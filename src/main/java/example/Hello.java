@@ -14,6 +14,5 @@ public class Hello implements RequestHandler<Object, Map<String, Object>> {
         response.put("headers", Map.of("Content-Type", "application/json"));
         response.put("body", "Hello World!");
         return response;
-
     }
 }
