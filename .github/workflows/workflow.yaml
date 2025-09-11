@@ -1,0 +1,14 @@
+name: Continuos Integration
+
+on: [push]
+
+jobs:
+  continuos-integration:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v5
+      - name: mvn package and test
+        run: |
+          mvn package
+          mvn test
