@@ -12,3 +12,7 @@ jobs:
         run: |
           mvn package
           mvn test
+      - name: Setup JDK 21
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
